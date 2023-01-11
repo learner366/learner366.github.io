@@ -1,7 +1,7 @@
 :root {
-  --trans-light: rgba(13, 210, 228, 0.55);
-  --trans-dark: rgba(226, 20, 241, 0.55);
-  --border-style: 1px solid rgb(249, 225, 10);
+  --trans-light: rgba(103, 206, 215, 0.6);
+  --trans-dark: rgba(225, 236, 145, 0.6);
+  --border-style: 1px solid rgb(15, 222, 112);
   --backdrop-filter: blur(5px) saturate(150%);
 }
 
@@ -125,7 +125,11 @@
   display: flex !important;
 }
 /* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */
-.menus_items .menus_item:nth-child(6) .menus_item_child {
+.menus_items .menus_item:nth-child(4) .menus_item_child {
+  left: -35px;
+}
+
+.menus_items .menus_item:nth-child(3) .menus_item_child {
   left: -35px;
 }
 
@@ -336,4 +340,12 @@ div#archive {
 [data-theme="dark"] .read-mode div#post {
   background: rgba(25, 25, 25, 0.9) !important;
   color: #ffffff;
+}
+/* 图标大小 */
+svg.icon {
+  width: 1.28em;
+  height: 1.28em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
 }
