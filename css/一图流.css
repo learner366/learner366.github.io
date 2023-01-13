@@ -515,24 +515,12 @@ h6::before {
   animation: ccc 6s linear infinite;
 }
 
-/* 返回顶部 */
-
-button#go-up #percent {
-  display: none;
-  font-weight: bold;
-  font-size: 15px !important;
+/* 欢迎信息 */
+#welcome-info {
+  background: linear-gradient(45deg, #37da2b, #6c38d4);
+  border-radius: 10px;
+  padding: 10px;
 }
-
-button#go-up span {
-  font-size: 12px!important;
-  margin-right: -1px;
-}
-
-/* 鼠标滑动到按钮上时显示返回顶部图标 */
-button#go-up:hover i {
-  display: block !important;
-}
-
-button#go-up:hover #percent {
-  display: none !important;
+[data-theme="dark"] #welcome-info {
+  background: #212121;
 }
