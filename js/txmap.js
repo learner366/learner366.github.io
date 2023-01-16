@@ -29,7 +29,7 @@ function getDistance(e1, n1, e2, n2) {
 
 function showWelcome() {
 
-    let dist = getDistance(31.202042, 107.473, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里换成自己的经纬度
+    let dist = getDistance(107.473, 31.202042, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里换成自己的经纬度
     let pos = ipLoacation.result.ad_info.nation;
     let ip;
     let posdesc;
@@ -156,10 +156,10 @@ function showWelcome() {
                     posdesc = "朝观日出逐白浪，夕看云起收霞光。";
                     break;
                 case "四川省":
-                    posdesc = "康康川妹子。";
+                    posdesc = "晓看红湿处，花重锦官城";
                     break;
                 case "贵州省":
-                    posdesc = "茅台，学生，再塞200。";
+                    posdesc = "茅台,学生,再塞200。";
                     break;
                 case "云南省":
                     posdesc = "玉龙飞舞云缠绕，万仞冰川直耸天。";
