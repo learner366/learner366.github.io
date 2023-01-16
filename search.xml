@@ -54,10 +54,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/console.js"/>
-      <url>/js/console.js</url>
+      <link href="/js/f12.js"/>
+      <url>/js/f12.js</url>
       
-        <content type="html"><![CDATA[var now1 = new Date();function createtime1() {    var grt = new Date("01/03/2023 00:00:00"); //此处修改你的建站时间或者网站上线时间    now1.setTime(now1.getTime() + 250);    var days = (now1 - grt) / 1000 / 60 / 60 / 24;    var dnum = Math.floor(days);    var ascll = [        `欢迎来到风をした🍀の小家!`,        `Better to live`,        "小站已经苟活",        dnum,        "天啦!",        "©2023 By 风をした",    ];    setTimeout(        console.log.bind(            console,            `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,            "color:#39c5bb",            "",            "color:#39c5bb",            "color:#39c5bb",            "",            "color:#39c5bb",            ""        )    );}createtime1();function createtime2() {    var ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为「大聪明」`, `Photo captured: `, ` 🤪 `];    setTimeout(        console.log.bind(            console,            `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}`,            "color:white; background-color:#10bcc0",            "",            "",            'background:url("https://unpkg.zhimg.com/anzhiyu-assets@latest/image/common/tinggge.gif") no-repeat;font-size:450%'        )    );    setTimeout(console.log.bind(console, "%c WELCOME %c 欢迎光临，大聪明", "color:white; background-color:#23c682", ""));    setTimeout(        console.warn.bind(            console,            "%c ⚡ Powered by Fomalhaut🥝 %c 你正在访问Fomalhaut🥝の小家",            "color:white; background-color:#f0ad4e",            ""        )    );    setTimeout(console.log.bind(console, "%c W23-12 %c 系统监测到你已打开控制台", "color:white; background-color:#4f90d9", ""));    setTimeout(        console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中", "color:white; background-color:#d9534f", "")    );}createtime2();// 重写console方法console.log = function () { };console.error = function () { };console.warn = function () { };]]></content>
+        <content type="html"><![CDATA[document.onkeydown = function (e) {    if (123 == e.keyCode || (e.ctrlKey && e.shiftKey && (74 === e.keyCode || 73 === e.keyCode || 67 === e.keyCode)) || (e.ctrlKey && 85 === e.keyCode)) return btf.snackbarShow("你真坏，不能打开控制台喔!"), event.keyCode = 0, event.returnValue = !1, !1};]]></content>
       
     </entry>
     
@@ -87,32 +87,21 @@
     
     <entry>
       <title></title>
+      <link href="/js/console.js"/>
+      <url>/js/console.js</url>
+      
+        <content type="html"><![CDATA[var now1 = new Date();function createtime1() {    var grt = new Date("01/03/2023 00:00:00"); //此处修改你的建站时间或者网站上线时间    now1.setTime(now1.getTime() + 250);    var days = (now1 - grt) / 1000 / 60 / 60 / 24;    var dnum = Math.floor(days);    var ascll = [        `欢迎来到风をした🍀の小家!`,        `Better to live`,        "小站已经苟活",        dnum,        "天啦!",        "©2023 By 风をした",    ];    setTimeout(        console.log.bind(            console,            `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,            "color:#39c5bb",            "",            "color:#39c5bb",            "color:#39c5bb",            "",            "color:#39c5bb",            ""        )    );}createtime1();function createtime2() {    var ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为「大聪明」`, `Photo captured: `, ` 🤪 `];    setTimeout(        console.log.bind(            console,            `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}`,            "color:white; background-color:#10bcc0",            "",            "",            'background:url("https://unpkg.zhimg.com/anzhiyu-assets@latest/image/common/tinggge.gif") no-repeat;font-size:450%'        )    );    setTimeout(console.log.bind(console, "%c WELCOME %c 欢迎光临，大聪明", "color:white; background-color:#23c682", ""));    setTimeout(        console.warn.bind(            console,            "%c ⚡ Powered by Fomalhaut🥝 %c 你正在访问Fomalhaut🥝の小家",            "color:white; background-color:#f0ad4e",            ""        )    );    setTimeout(console.log.bind(console, "%c W23-12 %c 系统监测到你已打开控制台", "color:white; background-color:#4f90d9", ""));    setTimeout(        console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中", "color:white; background-color:#d9534f", "")    );}createtime2();// 重写console方法console.log = function () { };console.error = function () { };console.warn = function () { };]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/js/fps.js"/>
       <url>/js/fps.js</url>
       
         <content type="html"><![CDATA[if (window.localStorage.getItem("fpson") == undefined || window.localStorage.getItem("fpson") == "1") {    var rAF = function () {        return (            window.requestAnimationFrame ||            window.webkitRequestAnimationFrame ||            function (callback) {                window.setTimeout(callback, 1000 / 60);            }        );    }();    var frame = 0;    var allFrameCount = 0;    var lastTime = Date.now();    var lastFameTime = Date.now();    var loop = function () {        var now = Date.now();        var fs = (now - lastFameTime);        var fps = Math.round(1000 / fs);        lastFameTime = now;        // 不置 0，在动画的开头及结尾记录此值的差值算出 FPS        allFrameCount++;        frame++;        if (now > 1000 + lastTime) {            var fps = Math.round((frame * 1000) / (now - lastTime));            if (fps <= 5) {                var kd = `<span style="color:#bd0000">卡成ppt🤢</span>`            } else if (fps <= 15) {                var kd = `<span style="color:red">电竞级帧率😖</span>`            } else if (fps <= 25) {                var kd = `<span style="color:orange">有点难受😨</span>`            } else if (fps < 35) {                var kd = `<span style="color:#9338e6">不太流畅🙄</span>`            } else if (fps <= 45) {                var kd = `<span style="color:#08b7e4">还不错哦😁</span>`            } else {                var kd = `<span style="color:#39c5bb">十分流畅🤣</span>`            }            document.getElementById("fps").innerHTML = `FPS:${fps} ${kd}`;            frame = 0;            lastTime = now;        };        rAF(loop);    }    loop();} else {    document.getElementById("fps").style = "display:none!important"}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/f12.js"/>
-      <url>/js/f12.js</url>
-      
-        <content type="html"><![CDATA[document.onkeydown = function (e) {    if (123 == e.keyCode || (e.ctrlKey && e.shiftKey && (74 === e.keyCode || 73 === e.keyCode || 67 === e.keyCode)) || (e.ctrlKey && 85 === e.keyCode)) return btf.snackbarShow("你真坏，不能打开控制台喔!"), event.keyCode = 0, event.returnValue = !1, !1};]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/light.js"/>
-      <url>/js/light.js</url>
-      
-        <content type="html"><![CDATA[// 霓虹灯效果// 颜色数组var arr = ["#39c5bb", "#f14747", "#f1a247", "#f1ee47", "#b347f1", "#1edbff", "#ed709b", "#5636ed"];// 颜色索引var idx = 0;// 切换颜色function changeColor() {    // 仅夜间模式才启用    if (document.getElementsByTagName('html')[0].getAttribute('data-theme') == 'dark') {        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = arr[idx] + " 0 0 10px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = arr[idx] + " 0 0 5px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = arr[idx] + " 0 0 12px";            document.getElementsByClassName("author-info__description")[0].style.textShadow = arr[idx] + " 0 0 12px";        } catch {                    }        idx++;        if (idx == 8) {            idx = 0;        }    } else {        // 白天模式恢复默认        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = "#1e1e1ee0 1px 1px 1px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = "";            document.getElementsByClassName("author-info__description")[0].style.textShadow = "";        } catch {                    }    }}// 开启计时器window.onload = setInterval(changeColor, 1000);]]></content>
       
     </entry>
     
@@ -131,28 +120,6 @@
     
     <entry>
       <title></title>
-      <link href="/js/sakura.js"/>
-      <url>/js/sakura.js</url>
-      
-        <content type="html"><![CDATA[var stop, staticx;var img = new Image();// 将引入的图片文件替换为你想要的即可img.src = "https://love.tatwfnm.top/img/%E9%9B%AA%E8%8A%B1.webp";function Sakura(x, y, s, r, fn) {    this.x = x;    this.y = y;    this.s = s;    this.r = r;    this.fn = fn}Sakura.prototype.draw = function (cxt) {    cxt.save();    var xc = 20 * this.s / 2;    cxt.translate(this.x, this.y);    cxt.rotate(this.r);    cxt.drawImage(img, 0, 0, 20 * this.s, 20 * this.s);    cxt.restore()};Sakura.prototype.update = function () {    this.x = this.fn.x(this.x, this.y);    this.y = this.fn.y(this.y, this.y);    this.r = this.fn.r(this.r);    if (this.x > window.innerWidth || this.x < 0 || this.y > window.innerHeight || this.y < 0) {        this.r = getRandom("fnr");        if (Math.random() > 0.4) {            this.x = getRandom("x");            this.y = 0;            this.s = getRandom("s");            this.r = getRandom("r")        } else {            this.x = window.innerWidth;            this.y = getRandom("y");            this.s = getRandom("s");            this.r = getRandom("r")        }    }};SakuraList = function () {    this.list = []};SakuraList.prototype.push = function (sakura) {    this.list.push(sakura)};SakuraList.prototype.update = function () {    for (var i = 0, len = this.list.length; i < len; i++) {        this.list[i].update()    }};SakuraList.prototype.draw = function (cxt) {    for (var i = 0, len = this.list.length; i < len; i++) {        this.list[i].draw(cxt)    }};SakuraList.prototype.get = function (i) {    return this.list[i]};SakuraList.prototype.size = function () {    return this.list.length};function getRandom(option) {    var ret, random;    switch (option) {        case "x":            ret = Math.random() * window.innerWidth;            break;        case "y":            ret = Math.random() * window.innerHeight;            break;        case "s":            ret = Math.random();            break;        case "r":            ret = Math.random() * 4;            break;        case "fnx":            random = -0.5 + Math.random() * 1;            ret = function (x, y) {                return x + 0.5 * random - 1.7            };            break;        case "fny":            random = 1.5 + Math.random() * 0.7;            ret = function (x, y) {                return y + random            };            break;        case "fnr":            random = Math.random() * 0.03;            ret = function (r) {                return r + random            };            break    }    return ret}function startSakura() {    requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || window.oRequestAnimationFrame;    var canvas = document.createElement("canvas"),        cxt;    staticx = true;    canvas.height = window.innerHeight;    canvas.width = window.innerWidth;    canvas.setAttribute("style", "position: fixed;left: 0;top: 0;pointer-events: none;");    canvas.setAttribute("id", "canvas_sakura");    document.getElementsByTagName("body")[0].appendChild(canvas);    cxt = canvas.getContext("2d");    var sakuraList = new SakuraList();    for (var i = 0; i < 50; i++) {        var sakura, randomX, randomY, randomS, randomR, randomFnx, randomFny;        randomX = getRandom("x");        randomY = getRandom("y");        randomR = getRandom("r");        randomS = getRandom("s");        randomFnx = getRandom("fnx");        randomFny = getRandom("fny");        randomFnR = getRandom("fnr");        sakura = new Sakura(randomX, randomY, randomS, randomR, {            x: randomFnx,            y: randomFny,            r: randomFnR        });        sakura.draw(cxt);        sakuraList.push(sakura)    }    stop = requestAnimationFrame(function () {        cxt.clearRect(0, 0, canvas.width, canvas.height);        sakuraList.update();        sakuraList.draw(cxt);        stop = requestAnimationFrame(arguments.callee)    })}window.onresize = function () {    var canvasSnow = document.getElementById("canvas_snow")};img.onload = function () {    startSakura()};function stopp() {    if (staticx) {        var child = document.getElementById("canvas_sakura");        child.parentNode.removeChild(child);        window.cancelAnimationFrame(stop);        staticx = false    } else {        startSakura()    }};]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/title.js"/>
-      <url>/js/title.js</url>
-      
-        <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener('visibilitychange', function () {  if (document.hidden) {    //离开当前页面时标签显示内容    document.title = '☕下课休息一下~';    clearTimeout(titleTime);  } else {    //返回当前页面时标签显示内容    document.title = '💫上课啦~';    //两秒后变回正常标题    titleTime = setTimeout(function () {      document.title = OriginTitile;    }, 2000);  }});]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
       <link href="/js/runtime.js"/>
       <url>/js/runtime.js</url>
       
@@ -164,10 +131,43 @@
     
     <entry>
       <title></title>
+      <link href="/js/light.js"/>
+      <url>/js/light.js</url>
+      
+        <content type="html"><![CDATA[// 霓虹灯效果// 颜色数组var arr = ["#39c5bb", "#f14747", "#f1a247", "#f1ee47", "#b347f1", "#1edbff", "#ed709b", "#5636ed"];// 颜色索引var idx = 0;// 切换颜色function changeColor() {    // 仅夜间模式才启用    if (document.getElementsByTagName('html')[0].getAttribute('data-theme') == 'dark') {        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = arr[idx] + " 0 0 10px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = arr[idx] + " 0 0 5px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = arr[idx] + " 0 0 12px";            document.getElementsByClassName("author-info__description")[0].style.textShadow = arr[idx] + " 0 0 12px";        } catch {                    }        idx++;        if (idx == 8) {            idx = 0;        }    } else {        // 白天模式恢复默认        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = "#1e1e1ee0 1px 1px 1px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = "";            document.getElementsByClassName("author-info__description")[0].style.textShadow = "";        } catch {                    }    }}// 开启计时器window.onload = setInterval(changeColor, 1000);]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/sakura.js"/>
+      <url>/js/sakura.js</url>
+      
+        <content type="html"><![CDATA[var stop, staticx;var img = new Image();// 将引入的图片文件替换为你想要的即可img.src = "https://love.tatwfnm.top/img/%E9%9B%AA%E8%8A%B1.webp";function Sakura(x, y, s, r, fn) {    this.x = x;    this.y = y;    this.s = s;    this.r = r;    this.fn = fn}Sakura.prototype.draw = function (cxt) {    cxt.save();    var xc = 20 * this.s / 2;    cxt.translate(this.x, this.y);    cxt.rotate(this.r);    cxt.drawImage(img, 0, 0, 20 * this.s, 20 * this.s);    cxt.restore()};Sakura.prototype.update = function () {    this.x = this.fn.x(this.x, this.y);    this.y = this.fn.y(this.y, this.y);    this.r = this.fn.r(this.r);    if (this.x > window.innerWidth || this.x < 0 || this.y > window.innerHeight || this.y < 0) {        this.r = getRandom("fnr");        if (Math.random() > 0.4) {            this.x = getRandom("x");            this.y = 0;            this.s = getRandom("s");            this.r = getRandom("r")        } else {            this.x = window.innerWidth;            this.y = getRandom("y");            this.s = getRandom("s");            this.r = getRandom("r")        }    }};SakuraList = function () {    this.list = []};SakuraList.prototype.push = function (sakura) {    this.list.push(sakura)};SakuraList.prototype.update = function () {    for (var i = 0, len = this.list.length; i < len; i++) {        this.list[i].update()    }};SakuraList.prototype.draw = function (cxt) {    for (var i = 0, len = this.list.length; i < len; i++) {        this.list[i].draw(cxt)    }};SakuraList.prototype.get = function (i) {    return this.list[i]};SakuraList.prototype.size = function () {    return this.list.length};function getRandom(option) {    var ret, random;    switch (option) {        case "x":            ret = Math.random() * window.innerWidth;            break;        case "y":            ret = Math.random() * window.innerHeight;            break;        case "s":            ret = Math.random();            break;        case "r":            ret = Math.random() * 4;            break;        case "fnx":            random = -0.5 + Math.random() * 1;            ret = function (x, y) {                return x + 0.5 * random - 1.7            };            break;        case "fny":            random = 1.5 + Math.random() * 0.7;            ret = function (x, y) {                return y + random            };            break;        case "fnr":            random = Math.random() * 0.03;            ret = function (r) {                return r + random            };            break    }    return ret}function startSakura() {    requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || window.oRequestAnimationFrame;    var canvas = document.createElement("canvas"),        cxt;    staticx = true;    canvas.height = window.innerHeight;    canvas.width = window.innerWidth;    canvas.setAttribute("style", "position: fixed;left: 0;top: 0;pointer-events: none;");    canvas.setAttribute("id", "canvas_sakura");    document.getElementsByTagName("body")[0].appendChild(canvas);    cxt = canvas.getContext("2d");    var sakuraList = new SakuraList();    for (var i = 0; i < 50; i++) {        var sakura, randomX, randomY, randomS, randomR, randomFnx, randomFny;        randomX = getRandom("x");        randomY = getRandom("y");        randomR = getRandom("r");        randomS = getRandom("s");        randomFnx = getRandom("fnx");        randomFny = getRandom("fny");        randomFnR = getRandom("fnr");        sakura = new Sakura(randomX, randomY, randomS, randomR, {            x: randomFnx,            y: randomFny,            r: randomFnR        });        sakura.draw(cxt);        sakuraList.push(sakura)    }    stop = requestAnimationFrame(function () {        cxt.clearRect(0, 0, canvas.width, canvas.height);        sakuraList.update();        sakuraList.draw(cxt);        stop = requestAnimationFrame(arguments.callee)    })}window.onresize = function () {    var canvasSnow = document.getElementById("canvas_snow")};img.onload = function () {    startSakura()};function stopp() {    if (staticx) {        var child = document.getElementById("canvas_sakura");        child.parentNode.removeChild(child);        window.cancelAnimationFrame(stop);        staticx = false    } else {        startSakura()    }};]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/js/universe.js"/>
       <url>/js/universe.js</url>
       
         <content type="html"><![CDATA[function dark() {window.requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var n,e,i,h,t=.05,s=document.getElementById("universe"),o=!0,a="180,184,240",r="226,225,142",d="226,225,224",c=[];function f(){n=window.innerWidth,e=window.innerHeight,i=.216*n,s.setAttribute("width",n),s.setAttribute("height",e)}function u(){h.clearRect(0,0,n,e);for(var t=c.length,i=0;i<t;i++){var s=c[i];s.move(),s.fadeIn(),s.fadeOut(),s.draw()}}function y(){this.reset=function(){this.giant=m(3),this.comet=!this.giant&&!o&&m(10),this.x=l(0,n-10),this.y=l(0,e),this.r=l(1.1,2.6),this.dx=l(t,6*t)+(this.comet+1-1)*t*l(50,120)+2*t,this.dy=-l(t,6*t)-(this.comet+1-1)*t*l(50,120),this.fadingOut=null,this.fadingIn=!0,this.opacity=0,this.opacityTresh=l(.2,1-.4*(this.comet+1-1)),this.do=l(5e-4,.002)+.001*(this.comet+1-1)},this.fadeIn=function(){this.fadingIn&&(this.fadingIn=!(this.opacity>this.opacityTresh),this.opacity+=this.do)},this.fadeOut=function(){this.fadingOut&&(this.fadingOut=!(this.opacity<0),this.opacity-=this.do/2,(this.x>n||this.y<0)&&(this.fadingOut=!1,this.reset()))},this.draw=function(){if(h.beginPath(),this.giant)h.fillStyle="rgba("+a+","+this.opacity+")",h.arc(this.x,this.y,2,0,2*Math.PI,!1);else if(this.comet){h.fillStyle="rgba("+d+","+this.opacity+")",h.arc(this.x,this.y,1.5,0,2*Math.PI,!1);for(var t=0;t<30;t++)h.fillStyle="rgba("+d+","+(this.opacity-this.opacity/20*t)+")",h.rect(this.x-this.dx/4*t,this.y-this.dy/4*t-2,2,2),h.fill()}else h.fillStyle="rgba("+r+","+this.opacity+")",h.rect(this.x,this.y,this.r,this.r);h.closePath(),h.fill()},this.move=function(){this.x+=this.dx,this.y+=this.dy,!1===this.fadingOut&&this.reset(),(this.x>n-n/4||this.y<0)&&(this.fadingOut=!0)},setTimeout(function(){o=!1},50)}function m(t){return Math.floor(1e3*Math.random())+1<10*t}function l(t,i){return Math.random()*(i-t)+t}f(),window.addEventListener("resize",f,!1),function(){h=s.getContext("2d");for(var t=0;t<i;t++)c[t]=new y,c[t].reset();u()}(),function t(){document.getElementsByTagName('html')[0].getAttribute('data-theme')=='dark'&&u(),window.requestAnimationFrame(t)}()};dark()]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/title.js"/>
+      <url>/js/title.js</url>
+      
+        <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener('visibilitychange', function () {  if (document.hidden) {    //离开当前页面时标签显示内容    document.title = '☕下课休息一下~';    clearTimeout(titleTime);  } else {    //返回当前页面时标签显示内容    document.title = '💫上课啦~';    //两秒后变回正常标题    titleTime = setTimeout(function () {      document.title = OriginTitile;    }, 2000);  }});]]></content>
       
     </entry>
     
@@ -196,6 +196,17 @@
     
     
     <entry>
+      <title>音乐</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>电影</title>
       <link href="/movies/index.html"/>
       <url>/movies/index.html</url>
@@ -210,17 +221,6 @@
       <title>标签</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>音乐</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
