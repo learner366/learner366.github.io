@@ -8,6 +8,7 @@
 /* 页脚与头图透明 */
 #footer {
     background: transparent !important;
+    font-weight: bold;
   }
   #page-header {
     background: transparent !important;
@@ -378,6 +379,7 @@
   backdrop-filter: var(--backdrop-filter);
   border-radius: 50px;
   border: var(--border-style);
+  font-weight: bold;
 }
 
 /* 文章页、归档页、普通页面 */
