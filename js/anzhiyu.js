@@ -1,4 +1,4 @@
-<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>var anzhiyu_musicPlaying = false;
+var anzhiyu_musicPlaying = false;
 var anzhiyu_musicFirst = false;
 var navMusicEl = document.getElementById("nav-music");
 var anzhiyu = {
