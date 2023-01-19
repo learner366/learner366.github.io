@@ -1,4 +1,4 @@
-var stop, staticx;
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>var stop, staticx;
 var img = new Image();
 // 将引入的图片文件替换为你想要的即可
 img.src = "https://love.tatwfnm.top/img/%E9%9B%AA%E8%8A%B1.webp";
