@@ -34,7 +34,7 @@
     /* 为载入的字体取名字(随意) */
     font-family: 'fdd';	
     /* 字体文件地址(相对或者绝对路径都可以) */
-    src: url(/font/粉嘟嘟拼英.ttf);
+    src: url(http://love.tatwfnm.top/fonts/%E7%B2%89%E5%98%9F%E5%98%9F%E6%8B%BC%E8%8B%B1.ttf);
     /* 定义加粗样式(加粗多少) */
     font-weight: normal;
     /* 定义字体样式(斜体/非斜体) */
@@ -47,7 +47,7 @@
     /* 为载入的字体取名字(随意) */
     font-family: 'ks';	
     /* 字体文件地址(相对或者绝对路径都可以) */
-    src: url(/font/楷书.ttf);
+    src: url(http://love.tatwfnm.top/fonts/%E6%A5%B7%E4%B9%A6.ttf);
     /* 定义加粗样式(加粗多少) */
     font-weight: normal;
     /* 定义字体样式(斜体/非斜体) */
@@ -60,7 +60,7 @@
     /* 为载入的字体取名字(随意) */
     font-family: 'sxt';	
     /* 字体文件地址(相对或者绝对路径都可以) */
-    src: url(/font/手写体.ttf);
+    src: url(http://love.tatwfnm.top/fonts/%E6%89%8B%E5%86%99%E4%BD%93.ttf);
     /* 定义加粗样式(加粗多少) */
     font-weight: normal;
     /* 定义字体样式(斜体/非斜体) */
@@ -73,7 +73,7 @@
     /* 为载入的字体取名字(随意) */
     font-family: 'tfss';	
     /* 字体文件地址(相对或者绝对路径都可以) */
-    src: url(/font/听风诉说.ttf);
+    src: url(http://love.tatwfnm.top/fonts/%E5%90%AC%E9%A3%8E%E8%AF%89%E8%AF%B4.ttf);
     /* 定义加粗样式(加粗多少) */
     font-weight: normal;
     /* 定义字体样式(斜体/非斜体) */
@@ -86,7 +86,7 @@
     /* 为载入的字体取名字(随意) */
     font-family: 'xc';	
     /* 字体文件地址(相对或者绝对路径都可以) */
-    src: url(/font/行草.ttf);
+    src: url(http://love.tatwfnm.top/fonts/%E8%A1%8C%E8%8D%89.ttf);
     /* 定义加粗样式(加粗多少) */
     font-weight: normal;
     /* 定义字体样式(斜体/非斜体) */
@@ -99,7 +99,7 @@
     /* 为载入的字体取名字(随意) */
     font-family: 'yz';	
     /* 字体文件地址(相对或者绝对路径都可以) */
-    src: url(/font/叶子.ttf);
+    src: url(http://love.tatwfnm.top/fonts/%E5%8F%B6%E5%AD%90.ttf);
     /* 定义加粗样式(加粗多少) */
     font-weight: normal;
     /* 定义字体样式(斜体/非斜体) */
@@ -112,7 +112,7 @@
     /* 为载入的字体取名字(随意) */
     font-family: 'jcks';	
     /* 字体文件地址(相对或者绝对路径都可以) */
-    src: url(/font/加粗楷书.ttf);
+    src: url(http://love.tatwfnm.top/fonts/%E5%8A%A0%E7%B2%97%E6%A5%B7%E4%B9%A6.ttf);
     /* 定义加粗样式(加粗多少) */
     font-weight: normal;
     /* 定义字体样式(斜体/非斜体) */
@@ -125,7 +125,7 @@
     /* 为载入的字体取名字(随意) */
     font-family: 'ct';	
     /* 字体文件地址(相对或者绝对路径都可以) */
-    src: url(/font/川体.ttf);
+    src: url(http://love.tatwfnm.top/fonts/%E5%B7%9D%E4%BD%93.otf);
     /* 定义加粗样式(加粗多少) */
     font-weight: normal;
     /* 定义字体样式(斜体/非斜体) */
@@ -138,7 +138,7 @@
     /* 为载入的字体取名字(随意) */
     font-family: 'flt';	
     /* 字体文件地址(相对或者绝对路径都可以) */
-    src: url(/font/飞龙体.ttf);
+    src: url(http://love.tatwfnm.top/fonts/%E9%A3%9E%E9%BE%99%E4%BD%93.ttf);
     /* 定义加粗样式(加粗多少) */
     font-weight: normal;
     /* 定义字体样式(斜体/非斜体) */
@@ -151,7 +151,7 @@
     /* 为载入的字体取名字(随意) */
     font-family: 'ybks';	
     /* 字体文件地址(相对或者绝对路径都可以) */
-    src: url(/font/硬笔楷书.ttf);
+    src: url(http://love.tatwfnm.top/fonts/%E7%A1%AC%E7%AC%94%E6%A5%B7%E4%B9%A6.TTF);
     /* 定义加粗样式(加粗多少) */
     font-weight: normal;
     /* 定义字体样式(斜体/非斜体) */
@@ -164,7 +164,7 @@
     /* 为载入的字体取名字(随意) */
     font-family: 'ns';	
     /* 字体文件地址(相对或者绝对路径都可以) */
-    src: url(/font/你是.ttf);
+    src: url(http://love.tatwfnm.top/fonts/%E4%BD%A0%E6%98%AF.ttf);
     /* 定义加粗样式(加粗多少) */
     font-weight: normal;
     /* 定义字体样式(斜体/非斜体) */
@@ -177,7 +177,7 @@
     /* 为载入的字体取名字(随意) */
     font-family: 'hg';	
     /* 字体文件地址(相对或者绝对路径都可以) */
-    src: url(/font/华光.ttf);
+    src: url(http://love.tatwfnm.top/fonts/%E5%8D%8E%E5%85%89.ttf);
     /* 定义加粗样式(加粗多少) */
     font-weight: normal;
     /* 定义字体样式(斜体/非斜体) */
@@ -190,7 +190,7 @@
     /* 为载入的字体取名字(随意) */
     font-family: 'xs';	
     /* 字体文件地址(相对或者绝对路径都可以) */
-    src: url(/font/行书.ttf);
+    src: url(http://love.tatwfnm.top/fonts/%E8%A1%8C%E4%B9%A6.ttf);
     /* 定义加粗样式(加粗多少) */
     font-weight: normal;
     /* 定义字体样式(斜体/非斜体) */
