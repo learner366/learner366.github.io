@@ -7,3 +7,5 @@ function musicBindEvent() {
       anzhiyu.musicToggle(false);
     });
   }
+
+  
