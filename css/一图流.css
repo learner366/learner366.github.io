@@ -719,7 +719,7 @@ h6::before {
   position: fixed;
   /* 指定位置 */
   left: 0px;
-  bottom: 67px;
+  bottom: 65px;
   z-index: 1919810;
 }
 [data-theme="light"] #fps {
