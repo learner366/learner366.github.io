@@ -221,7 +221,7 @@
 }
 /* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */
 .menus_items .menus_item:nth-child(4) .menus_item_child {
-  left: -35px;
+  left: -50px;
 }
 
 .menus_items .menus_item:nth-child(3) .menus_item_child {
@@ -1384,3 +1384,17 @@ h6::before {
   color: #ffffffb3;
 }
 
+.nav-fixed #nav{
+  transform: translateY(58px)!important;
+  -webkit-transform: translateY(58px)!important;
+  -moz-transform: translateY(58px)!important;
+  -ms-transform: translateY(58px)!important;
+  -o-transform: translateY(58px)!important;
+}
+#nav{
+  transition: none!important;
+  -webkit-transition: none!important;
+  -moz-transition: none!important;
+  -ms-transition: none!important;
+  -o-transition: none!important;
+}
